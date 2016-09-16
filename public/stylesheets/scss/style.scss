@@ -1,0 +1,25 @@
+$title-font:'Raleway', sans-serif;
+$para-font:'Oxygen', sans-serif;
+
+$highlight-color: orange;
+
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: inherit;
+  &:hover {
+    color: inherit;
+  }
+}
+
+h1 {
+    font-size: 50px;
+}
+
+
+@import './partials/nav';
+@import './partials/header';
+@import './partials/index';
+@import './partials/footer';

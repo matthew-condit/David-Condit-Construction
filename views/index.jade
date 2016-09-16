@@ -1,5 +1,19 @@
 extends layout
-
 block content
-  h1= title
-  p Welcome to #{title}
+    .row.splash 
+      .splash-description.col-xs-6
+        h3 95 years of Combined Training 
+        hr
+        p Click below to see some of our projects, or get a quote
+
+        button.btn.btn-outline-danger See Projects
+        button.btn.btn-outline-info Get Quote
+      .splash-slide.col-xs-6
+          .slideshow-container
+            .slideshow
+              .my-slider 
+                ul 
+                  li
+                    img(src='/images/construction.JPG', alt='Construction photo')
+                  li
+                    img(src='/images/logo.JPG', alt='logo')
