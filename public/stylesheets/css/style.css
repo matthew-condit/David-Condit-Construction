@@ -13,7 +13,7 @@ h1 {
 .nav * {
   font-family: "Oxygen", sans-serif;
   font-weight: 700;
-  color: orange; }
+  color: #CF5300; }
 
 /* Stylings for second heading section (not nav bar)*/
 .my-header {
@@ -50,6 +50,26 @@ h1 {
     font-weight: 700;
     font-family: "Raleway", sans-serif; }
 
+.btn {
+  margin: 10px;
+  font-size: 24px; }
+
+.info {
+  padding: 40px; }
+  .info img {
+    display: block;
+    border: 2px solid #CF5300;
+    border-radius: 50%;
+    width: 50%;
+    margin: 0 auto; }
+  .info p {
+    padding: 10px;
+    text-align: justify;
+    font-family: "Oxygen", sans-serif;
+    font-size: 20px;
+    font-weight: 700; }
+
+/*Unslider stylings*/
 .unslider-nav li {
   border: 1px solid black;
   border-radius: 50%; }
@@ -79,21 +99,10 @@ h1 {
   background: #fff;
   opacity: 1; }
 
-button {
-  margin: 10px; }
-
-/* Contact footer Partial Style */
-.contact {
-  font-size: 20px;
-  background-color: #000000;
-  color: white;
-  padding: 0;
-  margin: 0;
-  font-family: "Lato", sans-serif; }
-  .contact a {
-    text-decoration: none;
-    color: white; }
-    .contact a:hover {
-      color: white; }
+.footer {
+  margin-bottom: 0;
+  border-radius: 0; }
+  .footer p {
+    margin: 10px; }
 
 /*# sourceMappingURL=style.css.map */

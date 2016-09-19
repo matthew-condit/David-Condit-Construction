@@ -25,6 +25,32 @@
         font-family: $title-font
     }
 }
+.btn {
+  margin: 10px;
+  font-size: 24px;
+}
+
+.info {
+  padding: 40px;
+  img {
+    display: block;
+    border: 2px solid $highlight-color;
+    border-radius: 50%;
+    width: 50%;
+    margin: 0 auto;
+  }
+  p {
+    padding: 10px;
+    text-align: justify;
+    font-family: $para-font;
+    font-size: 20px;
+    font-weight: 700;
+  }
+}
+
+
+
+/*Unslider stylings*/
 
 .unslider-nav li {
     border: 1px solid black;
@@ -57,8 +83,5 @@
 .dots li.active {
   background: #fff;
   opacity: 1;
-}
-button {
-    margin: 10px;
 }
 
