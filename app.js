@@ -4,6 +4,9 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var mailer = require('express-mailer');
+
+
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
@@ -29,6 +32,18 @@ app.use('/index',routes);
 app.use('/users', users);
 app.use('/contact', contact);
 app.use('/projects', projects);
+
+mailer.extend(app, {
+  from: 'no-reply@conditconstruction.com',
+  host: 'smtp.gmail.com', // hostname 
+  secureConnection: true, // use SSL 
+  port: 465, // port for secure SMTP 
+  transportMethod: 'SMTP', // default is SMTP. Accepts anything that nodemailer accepts 
+  auth: {
+    user: 'conditconstruction@gmail.com',
+    pass: 'eagles04'
+  }
+});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
