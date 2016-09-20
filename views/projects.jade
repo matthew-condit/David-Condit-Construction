@@ -1,2 +1,12 @@
 extends layout
 block content
+  .project
+    .project-slide-show
+      h2 Gallery slider v
+      .gallery-slider 
+        ul 
+          each pic in pics 
+            h1 poop
+            li
+              img(src=dirname + pic.src, alt="Do this")
+

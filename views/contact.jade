@@ -1,16 +1,25 @@
 extends layout 
 block content
-
-  h1.h1 Lorem ipsum
-  p
-    strong Lorem ipsum dolor: 
-    | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  .contact
+    .contact-header
+      h1  Contact
+      h2  Feel free to send me an email from here, or directly from a personal account to conditconstruction@gmail.com
+      p 
+    .contact-form 
+      form(action='/sendEmail', method='post')
+        fieldset(data-role='')
+          label(for='') Your Name
+          input(id='name', name='name', type='text', value='', placeholder='John Doe').form-control
+          br
+          label(for='email') Email Address:
+          input(id='email', name='email', type='text', value='', placeholder='John.Doe@example.com').form-control
+          br
+          label(for='location') Location:
+          input(id='location', name='location', type='text', value='', placeholder='Boston, MA').form-control
+          br
+          label(for='description') Your Email:
+          textarea(id='description', name='description').form-control
+          input(type='submit', , value='Send your Request').btn.btn-success
     br
-    |Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-  h2.h2 Lorem ipsum
-  p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-  p Lorem ipsum:
-  ol
-    li Lorem ipsum dolor
-    li Lorem ipsum dolor
-    li Lorem ipsum dolor
+    br
+    br

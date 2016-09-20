@@ -13,7 +13,7 @@ h1 {
 .nav * {
   font-family: "Oxygen", sans-serif;
   font-weight: 700;
-  color: #CF5300; }
+  color: #F2784B; }
 
 /* Stylings for second heading section (not nav bar)*/
 .my-header {
@@ -58,7 +58,7 @@ h1 {
   padding: 40px; }
   .info img {
     display: block;
-    border: 2px solid #CF5300;
+    border: 2px solid #F2784B;
     border-radius: 50%;
     width: 50%;
     margin: 0 auto; }
@@ -104,5 +104,26 @@ h1 {
   border-radius: 0; }
   .footer p {
     margin: 10px; }
+
+/*  Contact Page Styling */
+.contact {
+  width: 100%;
+  background-color: #F2784B;
+  font-family: "Oxygen", sans-serif; }
+
+.contact-header, .contact-form {
+  width: 60%;
+  margin: 0 auto; }
+
+.contact-form {
+  border-radius: 20px;
+  background-color: white;
+  padding: 20px; }
+
+#description {
+  height: 200px; }
+
+.submit {
+  background-color: #F2784B; }
 
 /*# sourceMappingURL=style.css.map */

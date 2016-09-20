@@ -1,7 +1,7 @@
 $title-font:'Raleway', sans-serif;
 $para-font:'Oxygen', sans-serif;
 
-$highlight-color: #CF5300;
+$highlight-color: #F2784B;
 
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
@@ -23,3 +23,4 @@ h1 {
 @import './partials/header';
 @import './partials/index';
 @import './partials/footer';
+@import './partials/contact';

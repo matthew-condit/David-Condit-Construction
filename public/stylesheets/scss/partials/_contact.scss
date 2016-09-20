@@ -1,0 +1,28 @@
+/*  Contact Page Styling */
+
+.contact  {
+    width: 100%;
+    background-color: $highlight-color;
+    font-family: $para-font;
+}
+
+
+.contact-header {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.contact-form {
+    @extend .contact-header;
+    border-radius: 20px;
+    background-color: white;
+    padding: 20px;
+}
+
+#description {
+    height: 200px;
+}
+
+.submit {
+    background-color: $highlight-color;
+}

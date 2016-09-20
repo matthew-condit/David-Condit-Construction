@@ -12,7 +12,7 @@ var routes = require('./routes/index');
 var users = require('./routes/users');
 var projects = require('./routes/projects');
 var contact = require('./routes/contact');
-
+var email = require('./routes/sendEmail');
 var app = express();
 
 // view engine setup
@@ -32,6 +32,7 @@ app.use('/index',routes);
 app.use('/users', users);
 app.use('/contact', contact);
 app.use('/projects', projects);
+app.use('/sendEmail', email);
 
 mailer.extend(app, {
   from: 'no-reply@conditconstruction.com',
