@@ -30,7 +30,7 @@ router.post('/', function(req, res) {
         from: 'conditconstruction@gmail.com', // sender address
         to: 'davidcondit1@gmail.com', // list of receivers
         subject: 'Hey David, You have a new Client Inquiry from ' + req.body.name + ' in ' + req.body.location, // Subject line
-        text: req.body.description //, // plaintext body
+        html: 'To Respond, click here:  <a href="mailto:' req.body.email +'">'+req.body.email +'</a>'+ req.body.description  //, // plaintext body
     };
 
     transporter.sendMail(mailOptionsToDavid, function(error, info){
