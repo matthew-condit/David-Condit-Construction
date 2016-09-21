@@ -3,7 +3,9 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Condit Construction' });
+    var error = req.query.error;
+    console.log(error);
+    res.render('index', { title: 'Condit Construction' });
 });
 
 module.exports = router;

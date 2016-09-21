@@ -127,6 +127,10 @@ h1 {
   background-color: #F2784B; }
 
 /*  Projects and Gallery Stylings */
+.project h1 {
+  font-size: 15px;
+  font-family: "Raleway", sans-serif; }
+
 .project-slide-show {
   background: black;
   width: 100%; }
