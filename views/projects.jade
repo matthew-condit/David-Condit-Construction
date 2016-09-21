@@ -10,7 +10,7 @@ block content
               img(src=dirname + pic.src, alt=pic.src)
     .gallery-body.masonry
       each pic in pics 
-        .gallery-pic-wrapper.item
+        .gallery-pic-wrapper.item(data-featherlight=dirname + pic.src)
           img(src=dirname + pic.src, alt=pic.src)
 
     .clear-left

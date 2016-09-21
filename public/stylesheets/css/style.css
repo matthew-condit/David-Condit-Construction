@@ -145,7 +145,8 @@ h1 {
   overflow: hidden; }
 
 .gallery-pic-wrapper {
-  overflow: hidden; }
+  overflow: hidden;
+  cursor: pointer; }
   .gallery-pic-wrapper img {
     height: 200px;
     display: inline-block;
