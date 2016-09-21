@@ -6,7 +6,7 @@ var router = express.Router();
 /* GET home page. */
 router.get('/', function(req, res, next) {
     var galleryPictures = [];
-    var dirname ='/images/';
+    var dirname ='/images/gallery/';
     var getDir = './public/images/gallery';
     console.log(getDir);
     var files = fs.readdirSync(getDir);

@@ -1,12 +1,18 @@
 extends layout
 block content
   .project
+    h1 Disclaimer:  These photos are stock photos from the internet while this site is under construction.  
     .project-slide-show
-      h2 Gallery slider v
       .gallery-slider 
         ul 
           each pic in pics 
-            h1 poop
             li
-              img(src=dirname + pic.src, alt="Do this")
+              img(src=dirname + pic.src, alt=pic.src)
+    .gallery-body.masonry
+      each pic in pics 
+        .gallery-pic-wrapper.item
+          img(src=dirname + pic.src, alt=pic.src)
+
+    .clear-left
+
 
