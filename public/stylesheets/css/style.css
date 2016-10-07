@@ -1,5 +1,5 @@
 body {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+  font: 14px "Raleway", sans-serif; }
 
 a {
   color: inherit; }
@@ -26,6 +26,9 @@ h1 {
 .sub-title {
   margin: 0;
   padding: 0; }
+
+p {
+  font-family: "Raleway", sans-serif; }
 
 .splash {
   height: 500px;
@@ -54,14 +57,19 @@ h1 {
   margin: 10px;
   font-size: 24px; }
 
+.info-section {
+  background-color: #d6d6d6; }
+
 .info {
-  padding: 40px; }
+  padding: 40px;
+  text-align: center; }
   .info img {
     display: block;
-    border: 2px solid #F2784B;
-    border-radius: 50%;
-    width: 50%;
+    border-radius: 10%;
+    height: 200px;
     margin: 0 auto; }
+  .info a {
+    text-decoration: underline; }
   .info p {
     padding: 10px;
     text-align: justify;
@@ -127,10 +135,6 @@ h1 {
   background-color: #F2784B; }
 
 /*  Projects and Gallery Stylings */
-.project h1 {
-  font-size: 15px;
-  font-family: "Raleway", sans-serif; }
-
 .project-slide-show {
   background: black;
   width: 100%; }

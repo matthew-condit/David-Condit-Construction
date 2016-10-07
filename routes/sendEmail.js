@@ -23,14 +23,14 @@ router.post('/', function(req, res) {
     var mailOptionsToClient = {
         from: 'conditconstruction@gmail.com', // sender address
         to: req.body.email, // list of receivers
-        subject: 'Thanks, ' + req.body.name + ' for Reaching out', // Subject line
+        subject: 'Thanks, ' + req.body.name + ', for Reaching out', // Subject line
         html: emailForClient //, // plaintext body
     };
     var mailOptionsToDavid = {
         from: 'conditconstruction@gmail.com', // sender address
         to: 'davidcondit1@gmail.com', // list of receivers
         subject: 'Hey David, You have a new Client Inquiry from ' + req.body.name + ' in ' + req.body.location, // Subject line
-        html: 'To Respond, click here:  <a href="mailto:' req.body.email +'">'+req.body.email +'</a>'+ req.body.description  //, // plaintext body
+        html: 'To Respond, click here:  <a href="mailto:' + req.body.email +'">'+req.body.email +'</a>'+ req.body.description  // plaintext body
     };
 
     transporter.sendMail(mailOptionsToDavid, function(error, info){
@@ -42,7 +42,7 @@ router.post('/', function(req, res) {
             console.log(error);
             var errorBool = true;
         }
-       
+
     });
     res.redirect('/');
 });

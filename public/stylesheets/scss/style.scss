@@ -4,7 +4,7 @@ $para-font:'Oxygen', sans-serif;
 $highlight-color: #F2784B;
 
 body {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px $title-font;
 }
 
 a {

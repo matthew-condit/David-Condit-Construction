@@ -1,3 +1,7 @@
+p {
+  font-family: $title-font;
+}
+
 .splash {
     height: 500px;
     padding: 0;
@@ -30,14 +34,21 @@
   font-size: 24px;
 }
 
+.info-section {
+  background-color: #d6d6d6;
+}
+
 .info {
   padding: 40px;
+  text-align: center;
   img {
     display: block;
-    border: 2px solid $highlight-color;
-    border-radius: 50%;
-    width: 50%;
+    border-radius: 10%;
+    height: 200px;
     margin: 0 auto;
+  }
+  a {
+    text-decoration: underline;
   }
   p {
     padding: 10px;
@@ -84,4 +95,3 @@
   background: #fff;
   opacity: 1;
 }
-
