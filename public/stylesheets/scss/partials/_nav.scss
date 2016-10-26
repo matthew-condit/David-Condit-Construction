@@ -1,7 +1,22 @@
 /* Stylings for navbar*/
 
+.navbar {
+  border-radius: 0;
+  margin-bottom: 0;
+}
+
 .nav * {
   font-family: $para-font;
   font-weight: 700;
-  color: $highlight-color;
+  color: #ddd !important;
+}
+
+.nav a {
+  @media screen and (max-width: 700px) {
+    padding: 5px !important;
+  }
+}
+
+.nav-title {
+  font-family: $title-font;
 }

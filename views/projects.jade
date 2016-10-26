@@ -1,14 +1,15 @@
 extends layout
 block content
   .project
-    h1 Decking
-    h3 Click on an image to enlarge it!
+    h1 Deck Gallery
     .project-slide-show
       .gallery-slider 
         ul 
           each pic in pics 
             li
               img(src=dirname + pic.src, alt=pic.src)
+    .gallery-break 
+    
     .gallery-body.masonry
       each pic in pics 
         .gallery-pic-wrapper.item(data-featherlight=dirname + pic.src)

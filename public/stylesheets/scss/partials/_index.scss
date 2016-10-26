@@ -3,32 +3,44 @@ p {
 }
 
 .splash {
-    height: 500px;
-    padding: 0;
-    margin: 0;
-}
-.splash-slide {
-    margin:0;
-    padding:0;
+  height: 500px;
+  padding: 0;
+  margin: 0;
+  @media screen and (max-width: 760px) {
+    height: auto;
+  }
 }
 
+.splash-slide {
+  margin: 0;
+  padding: 0;
+  @media screen and (max-width: 500px) {
+    display: none;
+  }
+}
 
 .my-slider img {
-    height: 500px;
+  height: 500px;
 }
 
 .splash-description {
-    font-family: $para-font;
+  font-family: $para-font;
+  font-weight: 700;
+  margin: 0;
+  padding: 50px;
+  height: 100%;
+  line-height: 2;
+  background: linear-gradient(135deg, #f2825b 0%, #e55b2b 28%, #f07146 100%);
+  h3 {
     font-weight: 700;
-    margin: 0;
-    padding: 50px;
-    height: 100%;
-    background: linear-gradient(135deg, #f2825b 0%,#e55b2b 28%,#f07146 100%);
-    h3 {
-        font-weight: 700;
-        font-family: $title-font
-    }
+    font-family: $title-font;
+    font-size: 2em;
+  }
+  p {
+    font-size: 1.5em;
+  }
 }
+
 .btn {
   margin: 10px;
   font-size: 24px;
@@ -36,6 +48,7 @@ p {
 
 .info-section {
   background-color: #d6d6d6;
+  margin: 0;
 }
 
 .info {
@@ -43,9 +56,10 @@ p {
   text-align: center;
   img {
     display: block;
-    border-radius: 10%;
+    border-radius: 5%;
     height: 200px;
     margin: 0 auto;
+    max-width: 100%;
   }
   a {
     text-decoration: underline;
@@ -60,14 +74,13 @@ p {
 }
 
 
-
 /*Unslider stylings*/
 
 .unslider-nav li {
-    border: 1px solid black;
-    border-radius: 50%;
-
+  border: 1px solid black;
+  border-radius: 50%;
 }
+
 .dots {
   position: absolute;
   left: 0;

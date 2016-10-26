@@ -6,22 +6,41 @@ a {
   a:hover {
     color: inherit; }
 
-h1 {
-  font-size: 50px; }
+p {
+  font-family: "Oxygen", sans-serif; }
+
+.clear {
+  height: 0;
+  clear: both; }
 
 /* Stylings for navbar*/
+.navbar {
+  border-radius: 0;
+  margin-bottom: 0; }
+
 .nav * {
   font-family: "Oxygen", sans-serif;
   font-weight: 700;
-  color: #F2784B; }
+  color: #ddd !important; }
+
+@media screen and (max-width: 700px) {
+  .nav a {
+    padding: 5px !important; } }
+
+.nav-title {
+  font-family: "Raleway", sans-serif; }
 
 /* Stylings for second heading section (not nav bar)*/
 .my-header {
   margin: 0; }
 
-.title {
+.title h1 {
   font-family: "Raleway", sans-serif;
-  text-align: center; }
+  text-align: center;
+  font-size: 3em; }
+  @media screen and (max-width: 700px) {
+    .title h1 {
+      font-size: 1.5em; } }
 
 .sub-title {
   margin: 0;
@@ -34,10 +53,16 @@ p {
   height: 500px;
   padding: 0;
   margin: 0; }
+  @media screen and (max-width: 760px) {
+    .splash {
+      height: auto; } }
 
 .splash-slide {
   margin: 0;
   padding: 0; }
+  @media screen and (max-width: 500px) {
+    .splash-slide {
+      display: none; } }
 
 .my-slider img {
   height: 500px; }
@@ -48,26 +73,32 @@ p {
   margin: 0;
   padding: 50px;
   height: 100%;
+  line-height: 2;
   background: linear-gradient(135deg, #f2825b 0%, #e55b2b 28%, #f07146 100%); }
   .splash-description h3 {
     font-weight: 700;
-    font-family: "Raleway", sans-serif; }
+    font-family: "Raleway", sans-serif;
+    font-size: 2em; }
+  .splash-description p {
+    font-size: 1.5em; }
 
 .btn {
   margin: 10px;
   font-size: 24px; }
 
 .info-section {
-  background-color: #d6d6d6; }
+  background-color: #d6d6d6;
+  margin: 0; }
 
 .info {
   padding: 40px;
   text-align: center; }
   .info img {
     display: block;
-    border-radius: 10%;
+    border-radius: 5%;
     height: 200px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    max-width: 100%; }
   .info a {
     text-decoration: underline; }
   .info p {
@@ -135,6 +166,11 @@ p {
   background-color: #F2784B; }
 
 /*  Projects and Gallery Stylings */
+.project {
+  text-align: center; }
+  .project h1 {
+    font-size: 3em; }
+
 .project-slide-show {
   background: black;
   width: 100%; }

@@ -1,8 +1,8 @@
-$title-font:'Raleway', sans-serif;
-$para-font:'Oxygen', sans-serif;
-
+$title-font:'Raleway',
+sans-serif;
+$para-font:'Oxygen',
+sans-serif;
 $highlight-color: #F2784B;
-
 body {
   font: 14px $title-font;
 }
@@ -14,10 +14,14 @@ a {
   }
 }
 
-h1 {
-    font-size: 50px;
+p {
+  font-family: $para-font;
 }
 
+.clear {
+  height: 0;
+  clear: both;
+}
 
 @import './partials/nav';
 @import './partials/header';

@@ -1,16 +1,15 @@
 extends layout
 block content
     .row.splash 
-      .splash-description.col-xs-6
+      .splash-description.col-xs-12.col-md-6
         h3 30 years of Expertise
         hr
-        p Click below to see some of our projects, or get a quote
-
+        p Condit Construction has provided reliable and aesthetically impressive decks, windows, and trim for 30 years.  A good deck can transform your yard, and window replacement can save you hundreds over the course of only a couple years.  
         a(href='projects')
-          button.btn See Projects
+          button.btn.btn-primary See Projects
         a(href='contact')
-          button.btn Get Quote
-      .splash-slide.col-xs-6
+          button.btn.btn-primary Get Quote
+      .splash-slide.col-xs-12.col-md-6
           .slideshow-container
             .slideshow
               .my-slider 
@@ -26,17 +25,21 @@ block content
                   li 
                     img(src='/images/nails.jpg', alt='nails')
     .row.info-section 
-      .col-xs-4.info 
+      .col-xs-10.col-xs-offset-1.col-md-4.col-md-offset-0.info 
         img(src='/images/gallery/IMG_0142.JPG')
         h3 Decking
         p
           | Take advantage of your backyard this summer with a new deck.  Specializing in the new maintenance free Azek Decking products, Condit Construction builds decks with a classic style and unbeatable longevity. If you prefer more traditional materials, we also offer pressure-treated, mahogany, cedar, and fir decks. 
           a(href='projects') See what we've built in the area.
-      .col-xs-4.info
+      .col-xs-10.col-xs-offset-1.col-md-4.col-md-offset-0.info
         img(src='/images/window.jpg')
         h3 Replace your windows, doors, and trim 
-        p  Rotten wood in your home can cost you in New England.  Replace these windows, doors, and siding before the cold forces you to.  
-      .col-xs-4.info
+        p  
+          | Rotten wood in your home can cost you in New England.  Replace these windows, doors, and siding before the cold forces you to.  The added insulation, as well as a clean new style, will make you wonder why it took you so long to get in 
+          a(href='contact') contact with us.
+      .col-xs-10.col-xs-offset-1.col-md-4.col-md-offset-0.info
         img(src='/images/truck.jpg')
         h3 Snow Plowing 
-        p  Ever wake up late for work and 
+        p  
+          | We all love New England, but the winters can be rough.  We've all had the experience of waking up in the morning, getting ready, and finally realizing that there's a foot of snow in your driveway.  With our winter-long personal and business level plowing services, you'll never get stuck by the snow again.  
+          a(href='plowing') Check out our rates.
