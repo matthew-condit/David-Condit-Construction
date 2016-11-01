@@ -1,0 +1,35 @@
+.trim-wrapper {
+  width: 100%;
+  background-color: #d6d6d6;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  .trim-container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
+    @media screen and (max-width: 781px) {
+      width: 100%;
+    }
+    .trim-content {
+      width: 100%;
+      clear: both;
+      .trim-image {
+        width: 50%;
+        float: left;
+        img {
+          width: 100%;
+        }
+      }
+      .trim-description {
+        padding: 20px;
+        width: 50%;
+        float: left;
+      }
+    }
+    .trim-footer {
+      clear: both;
+      padding: 30px;
+      background-color: $highlight-color;
+    }
+  }
+}
