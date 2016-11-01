@@ -1,16 +1,24 @@
 .navbar.navbar-inverse.narbar-static-top
   .container-fluid
-    ul.nav.navbar-nav
-      li
-        a(href='/') Home
-      li
-        a(href='projects') Gallery
-      li
-        a(href='contact') Contact Us
-    ul.nav.navbar-nav.navbar-right
-      li 
-        a.nav-title(href='/') David Condit Construction
-      li
-        a(href='tel:1-978-399-4246') 1-978-399-4246
-      li 
-        a(href='mailto:davidcondit1@gmail.com') Email Us
+    .navbar-header
+      button.navbar-toggle(type="button" class="navbar-toggle" data-toggle="collapse" data-target=".myNavbar" onClick='$(".collapse").toggleClass("show-nav")')
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+    .collapse.navbar-collapse.myNavBar
+      ul.nav.navbar-nav
+        li
+          a(href='/', class=(title === 'Home' ? 'active' : '')) Home
+        li
+          a(href='projects', class=(title === 'Project Gallery' ? 'active' : '')) Gallery
+        li 
+          a(href='trim', class=(title === 'Trim' ? 'active' : '')) Windows & Trim
+        li 
+          a(href='plowing', class=(title === 'Snow Plowing' ? 'active' : '')) Snow Plowing
+        li
+          a(href='contact', class=(title === 'Contact' ? 'active' : '')) Contact Us
+      ul.nav.navbar-nav.navbar-right
+        li 
+          a.nav-title(href='/') David Condit Construction
+  //      li
+  //        a(href='tel:1-978-399-4246') 1-978-399-4246

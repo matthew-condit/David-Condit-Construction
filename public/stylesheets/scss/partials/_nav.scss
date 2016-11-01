@@ -5,10 +5,28 @@
   margin-bottom: 0;
 }
 
+.navbar-header {
+  h1 {
+    float: left;
+    font-size: 16px;
+    color: white !important;
+    padding-left: 20px;
+  }
+}
+
+.active {
+  color: white;
+  background-color: #333 !important;
+}
+
 .nav * {
   font-family: $para-font;
   font-weight: 700;
   color: #ddd !important;
+}
+
+.show-nav {
+  display: block;
 }
 
 .nav a {

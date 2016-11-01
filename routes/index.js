@@ -5,7 +5,7 @@ router.get('/', function (req, res, next) {
   var error = req.query.error;
   console.log(error);
   res.render('index', {
-    title: 'Condit Construction'
+    title: 'Home'
   });
 });
 /* GET trim page */

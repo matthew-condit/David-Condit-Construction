@@ -1,28 +1,38 @@
 /*  Contact Page Styling */
 
-.contact  {
-    width: 100%;
-    background-color: $highlight-color;
-    font-family: $para-font;
+.contact {
+  padding-top: 20px;
+  width: 100%;
+  background-color: $highlight-color;
+  font-family: $para-font;
 }
 
-
 .contact-header {
-    width: 60%;
-    margin: 0 auto;
+  width: 60%;
+  margin: 0 auto;
+  @media screen and (max-width: 500px) {
+    h2 {
+      font-size: 1.2em;
+    }
+  }
 }
 
 .contact-form {
-    @extend .contact-header;
-    border-radius: 20px;
-    background-color: white;
-    padding: 20px;
+  @extend .contact-header;
+  border-radius: 20px;
+  background-color: white;
+  padding: 20px;
+  @media screen and (max-width: 700px) {
+    .btn {
+      font-size: 1em;
+    }
+  }
 }
 
 #description {
-    height: 200px;
+  height: 200px;
 }
 
 .submit {
-    background-color: $highlight-color;
+  background-color: $highlight-color;
 }
