@@ -1,7 +1,16 @@
-.footer {
-  margin-bottom: 0;
-  border-radius: 0;
-  p {
-    margin: 10px;
+
+.footer-container {
+  background-color: #333;
+  color: #aaa;
+  padding: 40px;
+  .footer {
+    text-align: center;
+    a {
+      text-decoration: underline;
+      margin: 10px 10px;
+      &:hover{
+        color: #ccc;
+      }
+    }
   }
 }

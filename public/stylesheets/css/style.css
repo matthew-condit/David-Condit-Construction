@@ -81,6 +81,9 @@ p {
   background-color: #d6d6d6; }
   .my-slider img {
     height: 550px; }
+    @media screen and (max-width: 1000px) {
+      .my-slider img {
+        width: 100%; } }
 
 .splash-description {
   font-family: "Oxygen", sans-serif;
@@ -99,6 +102,8 @@ p {
     @media screen and (max-width: 500px) {
       .splash-description p {
         font-size: 16px; } }
+  .splash-description a {
+    text-decoration: underline; }
 
 .btn {
   margin: 10px;
@@ -162,11 +167,17 @@ p {
   background: #fff;
   opacity: 1; }
 
-.footer {
-  margin-bottom: 0;
-  border-radius: 0; }
-  .footer p {
-    margin: 10px; }
+.footer-container {
+  background-color: #333;
+  color: #aaa;
+  padding: 40px; }
+  .footer-container .footer {
+    text-align: center; }
+    .footer-container .footer a {
+      text-decoration: underline;
+      margin: 10px 10px; }
+      .footer-container .footer a:hover {
+        color: #ccc; }
 
 /*  Contact Page Styling */
 .contact {
@@ -183,6 +194,12 @@ p {
       width: 95%; }
       .contact-header h2, .contact-form h2 {
         font-size: 1.2em; } }
+
+.contact-number {
+  width: 60%;
+  margin: 50px auto; }
+  .contact-number a {
+    text-decoration: underline; }
 
 .contact-form {
   border-radius: 20px;

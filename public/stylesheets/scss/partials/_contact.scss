@@ -18,6 +18,14 @@
   }
 }
 
+.contact-number {
+  width: 60%;
+  margin: 50px auto;
+  a {
+    text-decoration: underline;
+  }
+}
+
 .contact-form {
   @extend .contact-header;
   border-radius: 20px;

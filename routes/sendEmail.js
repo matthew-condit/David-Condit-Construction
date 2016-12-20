@@ -18,7 +18,7 @@ router.post('/', function (req, res) {
     from: 'conditconstruction@gmail.com', // sender address
     to: req.body.email, // list of receivers
     subject: 'Thanks, ' + req.body.name + ', for Reaching out', // Subject line
-    html: emailForClient + erq.body.description //, // plaintext body
+    html: emailForClient + req.body.description //, // plaintext body
   };
   var mailOptionsToDavid = {
     from: 'conditconstruction@gmail.com', // sender address
